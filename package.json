@@ -1,0 +1,44 @@
+{
+  "name": "guess-mine",
+  "version": "1.0.0",
+  "description": "Realtime Drawing Game built with SocketIO, Gulp and Node",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js --ignore assets/ --ignore src/static",
+    "dev:assets": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spada9403/guess-mine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spada9403/guess-mine/issues"
+  },
+  "homepage": "https://github.com/spada9403/guess-mine#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babelify": "^10.0.0",
+    "del": "^6.0.0",
+    "eslint": "^7.17.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "morgan": "^1.10.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
+    "pug": "^3.0.0",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "prettier": "^2.2.1"
+  }
+}
