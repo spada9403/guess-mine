@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev:server": "nodemon --exec babel-node src/server.js --ignore assets/ --ignore src/static",
-    "dev:assets": "gulp"
+    "dev:assets": "gulp",
+    "start": "node src/static/js/main.js",
+    "prestart": "npm run dev:assets && npm run dev:server"
   },
   "repository": {
     "type": "git",
