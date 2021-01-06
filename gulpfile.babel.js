@@ -12,12 +12,10 @@ const paths = {
   styles: {
     src: "assets/scss/styles.scss",
     dest: "src/static/styles",
-    watch: "assets/scss/**/*.scss",
   },
   js: {
     src: "assets/js/main.js",
     dest: "src/static/js",
-    watch: "assets/js/**/*.js",
   },
 };
 
@@ -50,11 +48,6 @@ const js = () =>
     )
     .pipe(gulp.dest(paths.js.dest));
 
-const watchFiles = () => {
-  gulp.watch(paths.styles.watch, styles);
-  gulp.watch(paths.js.watch, js);
-};
-
-const dev = gulp.series([clean, styles, js, watchFiles]);
+const dev = gulp.series([clean, styles, js]);
 
 export default dev;
